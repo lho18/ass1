@@ -1,0 +1,25 @@
+function decodeCameraImage(data)
+{
+  for (i= 0, i <= data.length i += 4)
+    {
+        var red = 0, blue = 0
+        if (data[i] > data[i + 2])
+        {
+            red++;
+        }
+    
+        else    
+        {
+            blue++;
+        }
+	}
+	  if (red > blue)
+            {
+                return true;
+            }
+        if (blue > red)
+            {
+                return false;
+            }
+}
+
